@@ -4,7 +4,7 @@ library(tidyverse)
 
 #loads data, filters to relevant policy years
 permit_data <- read.csv("permit_data.csv") %>%
-  filter(year >= 2018)
+  filter(year >= 2015)
 
 #formats data as a year
 permit_data$year <- as.Date(as.character(permit_data$year), format = "%Y")
